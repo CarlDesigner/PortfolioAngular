@@ -30,7 +30,7 @@ export class ProductosService {
                     this.cargando = false;
                 }, 200);
 
-              } );
+              });
 
     }
 
