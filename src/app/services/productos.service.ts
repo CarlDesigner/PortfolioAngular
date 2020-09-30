@@ -22,16 +22,20 @@ export class ProductosService {
 
         this.http.get('https://angular-html-f24e8.firebaseio.com/productos_idx.json')
               .subscribe(  (resp: Producto[]) => {
-
-                  console.log(resp);
                   this.productos = resp;
-
                   setTimeout(() => {
                     this.cargando = false;
                 }, 200);
 
               });
-
     }
+
+      getProducto( id: String ) {
+
+        return this.http.get(`https://angular-html-f24e8.firebaseio.com/productos/${  id  }.json`);
+
+
+      }
+
 
 }
