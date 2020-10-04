@@ -30,7 +30,7 @@ export class ItemComponent implements OnInit {
                     .subscribe( (Producto: ProductoDescripcion ) => {
                       this.id = parametros['id'];
                       this.producto = Producto;
-                      console.log(Producto);
+                      /* console.log(Producto); */
 
                     } );
 
